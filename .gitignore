@@ -1,0 +1,3 @@
+movie-recommender/
+*.csv
+*.npy
