@@ -4,7 +4,7 @@ import numpy as np
 import requests
 
 def fetch_poster(movie_id):
-    url = f"https://api.themoviedb.org/3/movie/{movie_id}?api_key=67dbe0c02f95bc14e999031a7c783160&language=en-US"
+    url = f"https://api.themoviedb.org/3/movie/{movie_id}?api_key=&language=en-US"
     response = requests.get(url)
     data = response.json()
     return "https://image.tmdb.org/t/p/w500/" + data["poster_path"]
